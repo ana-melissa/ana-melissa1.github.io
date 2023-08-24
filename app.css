@@ -1,0 +1,603 @@
+
+/*
+COLORS IN USE RIGHT NOW
+
+GREEN
+AFC99B (darker laurel green)
+A0C49D (darker green)
+C4D7B2 (med dark green)
+E1ECC8 (med light green)
+F7FFE5 (lightest green)
+D9D99C (yellow green)
+ECF0CC (egg shell)
+
+
+BLUE
+#C4DFDF rgb(196, 223, 223) (darker blue)
+#D2E9E9 rgb(210, 233, 233) (med dark blue)
+#E3F4F4 rgb(227, 244, 244) (med light blue)
+#F8F6F4 rgb(248, 246, 244) (lightest blue)
+
+*/
+/* styles.css */
+body {
+  color: #ffffff; /* Replace with your desired light color */
+}
+
+/* button style for link */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.buttons {
+  margin: 10%;
+  text-align: center;
+}
+
+.btn-hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 30px;
+  transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 30px;
+  transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover2:hover {
+  background-position: 100% 0;
+  transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.btn-hover2:focus {
+  outline: none;
+}
+
+.btn-hover.color-10 {
+  background-image: linear-gradient(to right, #68a7e2, #9c50b3);
+box-shadow: 0 4px 15px 0 rgba(4, 2, 6, 0.75);
+}
+
+.btn-hover2.color-10 {
+      background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B);
+  box-shadow: 0 4px 15px 0 rgba(20, 15, 16, 0.75);
+}
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Place the video behind other content */
+}
+
+#video-background {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+/* position header photo to the right of header text */
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Customize the font of my name in the header*/
+.text-container h1 {
+  font-family: "Whomp", Regular;
+  font-size: 60px; 
+  color: #191825;
+  /*padding: 30px; /* more visually appealing */
+  margin-left: 30px;
+  text-shadow: 6px 4px 4px #64dfdf;
+}
+
+/* Customize the font of my name in the header */
+.text-container h3 {
+  /*font-family: "Whomp", Regular;*/
+  font-size: 11px; 
+  color: #191825;
+  margin-left: 30px; /* more visually appealing */
+  margin-top: 20px;
+}
+
+/* customize background color of header */
+.header-with-bg-image {
+  /*background-image: url("IMG_3807.jpg");*/
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  min-height: 280px;
+  width: auto;
+  height: auto;
+
+  /* background-color: #e9edc9; */
+  /* padding: 30px; */
+  box-shadow: 0 4px 8px rgba(0, 0.0, 0, 0.9); /* Add a subtle shadow */
+}
+
+/* adjust picture wdith and height */
+.header-picture img {
+  width: auto; /* Make the image fill the entire width of the header */
+  height: auto; /* Maintain the image's aspect ratio to avoid distortion */
+  max-height: 200px; /* Set the maximum height of the image */
+}
+
+/* Custom styles for the navbar */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0.0, 0.0, 0.9); /* Add a subtle shadow */
+  padding: 10px;
+  background-color: #191825; 
+}
+
+.image_nav {
+  width: 10px;
+  height: auto;
+}
+
+.navbar-nav .nav-link {
+  /*padding: 10px 15px;*/
+  border: none;
+  margin-left: 6px;
+}
+
+/* Add this CSS to your stylesheet */
+.navbar-nav .nav-item .nav-link {
+  transition: color 0.3s; /* Adding a smooth color transition */
+  color: #d9b4e7; /* Default color */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #64dfdf; /* Color to apply when hovering */
+  text-decoration: underline;
+}
+
+.navbar-toggler {
+  border: none;
+  transition: background-color 0.3s, border-color 0.3s;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(128, 208, 237, 0.2);
+  background-color: #191825;
+  margin-left: 20px;
+}
+
+.navbar-toggler:hover {
+  background-color: #d8b5e5;
+}
+
+body {
+  padding-top: 60px;
+}
+
+
+/* add padding to each section in main() */
+.section-with-bg-color {
+  padding: 20px;
+  margin-bottom: 20px; /* adds space between each section */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Add a subtle shadow */
+}
+
+
+/* 
+   HOME
+   HOME
+   HOME
+*/
+
+#home {
+  background-color: #191825;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0.0, 0.0, 0.9);
+  
+}
+
+#home p {
+  margin-left:20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+/* 
+   ABOUT 
+   ABOUT
+   ABOUT
+*/
+
+#about {
+  background-color: #191825;;
+  box-shadow: 0 2px 4px rgba(0, 0.0, 0.0, 0.9);
+}
+
+/* padding to "About Me" heading h2 */
+.section-with-bg-color h2 {
+  padding: 20px;
+}
+
+/* add 3 separate row sections for about */
+.about-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* inside each section details (column format) */
+.about-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-section h4 {
+  padding: 10px;
+  margin-left:20px;
+}
+
+/* add space between the 3 paragraphs */
+.about-section p {
+  padding: 10px; /* Add 20 pixels of padding on all sides */
+  margin-left:20px;
+}
+
+/* 
+   PORTFOLIO 
+   PORTFOLIO
+   PORTFOLIO
+*/
+#portfolio {
+  background-color: #191825;;
+  box-shadow: 0 2px 4px rgba(0, 0.0, 0.0, 0.9);
+}
+
+  /* padding to "portfolio" heading h2 */
+.section-with-bg-color h2 {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+iframe {
+  border: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* add 3 separate row sections for about */
+.portfolio-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* inside each section details (column format) */
+.portfolio-section {
+  display: flex;
+  flex-direction: column;
+  padding: 20px; /* Add 20 pixels of padding on all sides */
+}
+
+.portfolio-section h4 {
+  padding: 20px;
+}
+
+.portfolio-section img {
+  padding: 30px;
+}
+
+/* add space between the 3 paragraphs */
+.portfolio-section p {
+  padding: 20px; /* Add 20 pixels of padding on all sides */
+}
+
+/* 
+   ADVENTURES 
+   ADVENTURES
+   ADVENTURES
+*/
+#adventures {
+  background-color: #191825;;
+  box-shadow: 0 2px 4px rgba(0, 0.0, 0.0, 0.9);
+}
+#adventures p {
+  padding: 20px; /* Add 20 pixels of padding on all sides */
+}
+
+
+/* Apply a flexbox layout to the gallery container */
+.gallery {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent images from wrapping to the next line */
+  overflow-x: auto; /* Enable horizontal scrolling if images exceed container width */
+  scroll-snap-type: x mandatory; /* Enable snapping to each image */
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Style individual images */
+.gallery img {
+  width: auto; /* Adjust the size as needed */
+  height: 250px; /* Maintain aspect ratio */
+  scroll-snap-align: start; /* Snap each image to the left */
+  object-fit: cover; /* Maintain aspect ratio while covering the container */
+  margin-right: 10px; /* Add spacing between images */
+}
+
+/* Hide horizontal scrollbar */
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.adventureSection {
+  margin-bottom: 30px;
+} 
+
+.adventureSection h2 {
+  font-size: 24px;
+}
+
+.mapimage img {
+  max-width: 100%; /* Make sure the image doesn't exceed its container */
+  width: 100%; /* Make the image take up the full width of its container */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  margin-bottom: 20px;
+}
+
+
+
+/* 
+   BOOKS 
+   BOOKS
+   BOOKS
+*/
+/*
+#books {
+  background-color: #F7FFE5;
+  box-shadow: 0 2px 4px rgba(0, 0.0, 0.0, 0.9);
+}
+#books p {
+  padding: 20px;
+}*/
+
+
+
+/* 
+   CONTACT
+   CONTACT
+   CONTACT
+*/
+
+#contact {
+  background-color: #191825;;
+  box-shadow: 0 2px 4px rgba(0, 0.0, 0.0, 0.9);
+}
+
+#contact h4 {
+  padding: 20px; /* Add 20 pixels of padding on all sides */
+}
+
+.contacts {
+  padding: 20px;
+}
+
+.contacts h3 {
+  font-size: 21px; 
+}
+
+/* box style for contact info */
+.contacts p {
+  font-size: 16px; 
+  padding: 10px;
+  background-color: #17917c;
+  margin-top: 10px; 
+  margin-left: 10px;
+  color: #191825;
+  border-radius: 5px;
+}
+
+/* 
+   MUSIC 
+   MUSIC
+   MUSIC
+*/
+
+#music {
+  background-color: #191825;;
+  max-width: 1400px; /* Set a maximum width for content */
+  margin: 0 auto; /* Center content horizontally */
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0.0, 0.0, 0.9);
+}
+
+#music h2 {
+  font-size: 50px;
+}
+
+.spotifylogo img {
+  max-width: 100px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-left: 40px;
+}
+
+#SpotifyPlaylist img {
+  display: flex;
+  justify-content: center;
+  max-width: 150px;
+  height: auto;
+}
+
+#SpotifyPlaylist h4 {
+  padding:20px;
+  font-size: 40px;
+}
+
+#SongRecomendations h4 {
+  padding:20px;
+  font-size: 40px;
+  text-align: center;
+}
+
+#SongRecomendations p {
+  padding:20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.music-items-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap onto a new line */
+  justify-content: space-between; /* Distribute items evenly on the row */
+  margin-top: 20px; /* Add some spacing between sections */
+}
+
+.music-item2 {
+  flex: calc(30% - 20px); /* two items per row */
+  display: flex;
+  flex-direction: column; /* Display items in a row */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #191825;;
+}
+
+.music-item2 strong {
+  font-size: 1.4em;
+  text-align: center; /* Center the text */
+}
+
+.music-item2 p {
+  text-align: center; /* Center the text */
+}
+
+.music-image2 {
+  max-width: 100px;
+  height: 100;
+  margin-bottom: 20px;
+  border: 1px solid #000000;
+  margin: 0 auto;
+}
+/* Add responsive styles */
+@media (max-width: 768px) {
+  .music-item2 {
+      flex-basis: 100%;
+  }
+}
+
+/* second section of MUSIC */
+.music-item {
+  flex: calc(50% - 20px); /* two items per row */
+  display: flex;
+  flex-direction: column; /* Display items in a row */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #191825;;
+}
+
+.music-item p {
+  text-align: center; /* Center the text */
+}
+
+.music-item strong {
+  font-size: 1.4em;
+  text-align: center; /* Center the text */
+}
+
+.music-image {
+  border: 1px solid #000000;
+  /*display: flex;*/
+  /*justify-content: center;*/
+  margin: 0 auto;
+  max-width: 300px;
+  height: 300;
+}
+
+.music-text {
+  flex: 1; /* Allow text to take up remaining space */
+}
+
+/* Add responsive styles */
+@media (max-width: 668px) {
+  .music-item {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .music-image {
+      margin-bottom: 10px; /* Add spacing between image and text */
+  }
+}
+
+
+/* 
+   END OF WEBSITE
+   END OF WEBSITE
+   END OF WEBSITE
+*/
+
+#END {
+  box-shadow: 0 2px 4px rgba(0, 0.0, 0.0, 0.9);
+  background-color: #191825;;
+}
+#END p {
+  padding: 20px; /* Add 20 pixels of padding on all sides */
+}
