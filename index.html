@@ -1,0 +1,615 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- BELOW: 4 INCLUDED BOOTSTRAP FILES -->
+    <!-- link tag to bootstrap style sheet-->
+    <link 
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- link tag to scripting tag of bootstrap present on server-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" ></script>
+
+    <!-- link tag to connect to the jsdeliver popperjs (add drop down properties)-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" ></script>
+    
+    <!-- link tag to connect to the jsdeliver bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" ></script>
+
+    <!-- My Style  -->
+    <link rel="stylesheet" href="app.css" />
+    <title>Ana Melissa - Personal Website</title>
+
+    <!-- Colors I like
+    	
+
+    Name: Eggshell
+        Hex: #ECF0CC
+        RGB: (236, 240, 204)
+        CMYK: 0.016, 0, 0.15, 0.058
+
+    Medium Spring Bud	
+        Name: Medium Spring Bud
+        Hex: #D9D99C
+        RGB: (217, 217, 156)
+        CMYK: 0, 0, 0.281, 0.149
+
+    Laurel Green	
+        Name: Laurel Green
+        Hex: #AFC99B
+        RGB: (175, 201, 155)
+        CMYK: 0.129, 0, 0.228, 0.211
+
+    Dolphin Gray	
+        Name: Dolphin Gray
+        Hex: #739187
+        RGB: (115, 145, 135)
+        CMYK: 0.206, 0, 0.068, 0.431
+
+    Rosy Brown	
+        Name: Rosy Brown
+        Hex: #B3978D
+        RGB: (179, 151, 141)
+        CMYK: 0, 0.156, 0.212, 0.298
+
+    Tan	
+        Name: Tan
+        Hex: #D1BE97
+        RGB: (209, 190, 151)
+        CMYK: 0, 0.090, 0.277, 0.180
+
+    -->
+</head>
+
+<body style="background-color: #191825;">
+    
+    <div class="video-container">
+        <video autoplay muted loop id="video-background">
+            <source src="WebsitePhotos/AdobeStock_514493384_Video_4K_Preview.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- customized container bootstrap property (adds padding to website and screensize variety)-->
+    <div class="container">
+        <!-- add padding so header doesn't overlap with navbar -->
+        <header class="header-with-bg-image" style="padding-top: 80px; background-image: url(WebsitePhotos/IMG_3807.jpg)">
+            <div class="header-content">
+                <div class="text-container" style="padding: 20px;">
+                    <h1>Ana Melissa</h1>
+                    <h3>Dedicated Student and Computer Scientist</h3>
+                    <h3>pronounced [aw-nah] [mell-lee-saw]</h3>
+                </div>
+            </div>
+        </header>
+
+        <!-- FIX LATER: don't require to be located at top of page for navbar to work properly -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #191825;">        
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fa fa-bars"></i>
+                </span>
+                <span class="navbar-toggler-text">Menu</span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">  
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-scroll" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-scroll" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-scroll" href="#adventures">Adventures</a>
+                    </li>
+
+                    <!--
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-scroll" href="#books">Books</a>
+                    </li>-->
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-scroll" href="#music">Music</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main style="padding-top: 20px;">
+            <div class="container">
+                <section id="home" class="section-with-bg-color">
+                    <h2>Hello and Welcome!</h2>
+                    <p>
+                        I'm Ana, and this is my website!
+                    </p>
+                    <p>
+                        <a href="https://www.linkedin.com/in/ana-melissa" target="_blank" class="btn-hover2 color-10">My LinkedIn</a>
+                        <a href="https://github.com/ana-melissa" target="_blank" class="btn-hover2 color-10">My GitHub</a>
+                    </p>
+                </section>
+
+                <section id="about" class="section-with-bg-color">
+                    <h2>About Me</h2>
+                        <div class="about-content">
+                            <div class="about-section">
+                                <h4>Introduction</h4>
+                                <p>
+                                    I grew up in Big Bear City, CA. My family holds a very 
+                                    special place in my heart, and they are incredibly important to me. My dad works at our local airport and my mom 
+                                    works as a realtor. I have two wonderful sisters and two adorable dogs. I am entering my 4th year attending UC 
+                                    Santa Cruz and I plan to graduate June 2024! 
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="about-content">
+                            <div class="about-section">
+                        
+                                <h4>Interests and Hobbies</h4>
+                                <p>
+                                    My hobbies include backpacking, skiing, golfing, and guitar. I love Santa Cruz so when I'm not working on my studies 
+                                    I explore! My friend and I have taken up the hobby of backpacking which has allowed for many adventures. Recently 
+                                    we backpacked Sykes Hot Springs right after the big storm (Jan. 2023) so we had it all to ourselves along with some
+                                    slippery trails. We also recently backpacked in the beautiful and untocuhed Henry Coe Park.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about-content">
+                            <div class="about-section">
+                                <h4>Goals</h4>
+                                <p>
+                                    I am excited and scared for this upcoming year because I will be wrapping up my experience at UCSC and moving into 
+                                    the real world. My main goal is to start getting experience and I hope to do that before I graduate and imidiately
+                                    after I graduate. I am on the look out for internships/experiences.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="portfolio" class="section-with-bg-color">
+                    <h2>Portfolio
+                        <div class="music-items-container">
+
+                            <div class="music-item2"> 
+                                <a href="#Resume" class="btn-hover color-10">Resume</a>
+                            </div>
+
+                            <div class="music-item2"> 
+                                <!-- link for scrolling to SVCSI Camp -->
+                                <a href="#SVCSI" class="btn-hover color-10">Silicon Valley Cyber Security Institute & Research Project</a>
+                            </div>
+
+                            <div class="music-item2"> 
+                                <a href="#ChatBot" class="btn-hover color-10">ChatBot</a>
+                            </div>
+
+                            <div class="music-item2"> 
+                                <a href="#Interactive Map" class="btn-hover color-10">Interactive Map</a>
+                            </div>
+
+                            <div class="music-item2"> 
+                                <a href="#Project 4" class="btn-hover color-10">Project 4</a>
+                            </div>
+
+                            <div class="music-item2"> 
+                                <a href="#Project 5" class="btn-hover color-10">Project 5</a>
+                            </div>
+                        </div>
+                    </h2>
+
+                    <div class="container">
+                        <div id="Resume" class="portfolio-content">
+                            <div class="portfolio-section">
+                                <h4>1. Resume</h4>
+                                <iframe src="https://drive.google.com/file/d/1IxAPNS41AGMWtcR9dQOi4PFil6dbVnDe/preview" height="390px"></iframe>
+                            </div>
+                        </div>
+
+                        <div id="SVCSI" class="portfolio-content">
+                            <div class="portfolio-section">
+                                
+                                <h4> 2. Silicon Valley Cyber Security Institute & Research Project </h4>
+
+                                <img src="WebsitePhotos/Ana Melissa(2).jpg" alt="Camp Certificate" class="img-fluid">
+                                <!-- <img src="poster.png" alt="TRNG Project Image" width="300" height="200"> -->
+                                <p>
+                                    During my time at the SVCSI (Silicon Valley Cyber Security Institute), 
+                                    my group and I researched and designed a lightweight TRNG for the hardware 
+                                    security primitive. I will include a link to a more in depth description 
+                                    of the TRNG we researched and designed. 
+                                </p>
+                                <!-- include a link /hover over to pull up a bigger picture of the project summary -->
+
+                                <img src="WebsitePhotos/poster.png" alt="TRNG Project Image" class="img-fluid">
+                            
+                            </div>
+                        </div>
+
+                        <div id="ChatBot" class="portfolio-content">
+                            <div class="portfolio-section">
+                                <h4>3. Eventual ChatBot</h4>
+                                <p>
+                                    Decsription of project 2.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="Interactive Map" class="portfolio-content">
+                        <div class="portfolio-section">
+                            <h4>4. Interactive Campus Map /Trees</h4>
+                            <p>
+                                Description of project 3.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="Project 4" class="portfolio-content">
+                        <div class="portfolio-section">
+                            <h4>5. Project 4</h4>
+                            <p>
+                                Description of project 4.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="Project 5" class="portfolio-content">
+                        <div class="portfolio-section">
+                            <h4>6. Project 5</h4>
+                            <p>
+                                Description of project 5.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!--  END OF PORTFOLIO  -->
+
+                <section id="adventures" class="section-with-bg-color">
+                    <h2>Adventures</h2>
+                    <div class="adventureSection">
+                        <h2>Sykes Natural Hot Springs - Big Sur Pine Ridge Trail</h2>
+                        <div class="mapimage">
+                            <img src="WebsitePhotos/Screenshot 2023-08-16 153659.png" alt="Pine Ridge" class="img-fluid music-image">
+                        </div>
+                        <div class="gallery">
+                            <img src="WebsitePhotos/IMG_1915.jpg" alt="day-hike">
+                            <img src="WebsitePhotos/IMG_2001.jpg" alt="tree/creek">
+                            <img src="WebsitePhotos/IMG_1902.jpg" alt="pancakes">
+                            <img src="WebsitePhotos/IMG_1986.jpg" alt="clear-water">
+                            <img src="WebsitePhotos/IMG_1921.jpg" alt="flower1">
+                            <img src="WebsitePhotos/IMG_1929.jpg" alt="flower2">
+                            <img src="WebsitePhotos/IMG_1992.jpg" alt="looking">
+                            <img src="WebsitePhotos/IMG_2020.jpg" alt="moutains">
+                        </div>
+                    </div>
+
+                    <div class="adventureSection">
+                        <h2>China Hole - Henry Coe State Park</h2>
+                        <div class="mapimage">
+                            <img src="WebsitePhotos/chinahole.png" alt="China Hole Loop" class="img-fluid music-image">
+                        </div>
+                        <div class="gallery">
+                            <img src="WebsitePhotos/me.jpg" alt="5">
+                            <img src="WebsitePhotos/chinahole.jpg" alt="1">
+                            <img src="WebsitePhotos/campfire.jpg" alt="2">
+                            <img src="WebsitePhotos/backview.jpg" alt="3">
+                            <img src="WebsitePhotos/laurahike.jpg" alt="4">
+                            <img src="WebsitePhotos/rock.jpg" alt="6">
+                            <img src="WebsitePhotos/sign.jpg" alt="7">
+                            <img src="WebsitePhotos/tentfunny.jpg" alt="8">
+                        </div>
+                    </div>
+
+                    <div class="adventureSection">
+                        <h2>Sykes Natural Hot Springs - Big Sur Old Coast Road to Pine Ridge Trail</h2>
+                        <div class="mapimage">
+                            <img src="WebsitePhotos/Screenshot 2023-08-16 154047.png" alt="Pine Ridge Old ridge coast" class="img-fluid music-image">
+                        </div>
+                        <div class="gallery">
+                            <img src="WebsitePhotos/ventana.jpg" alt="1">
+                            <img src="WebsitePhotos/dad.JPG" alt="2">
+                            <img src="WebsitePhotos/tent.jpg" alt="1">
+                            <img src="WebsitePhotos/dad2.jpg" alt="3">
+                            <img src="WebsitePhotos/river.jpg" alt="4">
+                            <img src="WebsitePhotos/backpack1.jpg" alt="5">
+                            <img src="WebsitePhotos/backpack3.jpg" alt="6">
+                            <img src="WebsitePhotos/IMG_3807.jpg" alt="7">
+
+                        </div>
+                    </div>
+
+                    <div class="adventureSection">
+                        <h2>Andrew Molera State Park Beach - Big Sur </h2>
+                        <div class="mapimage">
+                            <img src="WebsitePhotos/Screenshot 2023-08-16 154530.png" alt="Andrew Molera" class="img-fluid music-image">
+                        </div>
+                        <div class="gallery">
+                            <img src="WebsitePhotos/coast.jpg" alt="2">
+                            <img src="WebsitePhotos/sandals.jpg" alt="3">
+                            <img src="WebsitePhotos/walking.jpg" alt="3">
+                        </div>
+                    </div>
+
+                    <div class="adventureSection">
+                        <h2>South Coast Ridge Rd - Big Sur</h2>
+                        <div class="mapimage">
+                            <img src="WebsitePhotos/losburrosroad.png" alt="South Coast Ridge Road" class="img-fluid music-image">
+                        </div>
+                    </div>
+
+                    <p>
+                        <a href="https://bigsurtrailmap.net/" target="_blank" class="btn-hover2 color-10">Big Sur Trails</a>
+                    </p>
+                    <p>
+                        <a href="https://coepark.net/" target="_blank" class="btn-hover2 color-10">Henry Coe Trails</a>
+                    </p>
+                    <p>
+                        <a href="https://www.bigbearmountainresort.com/things-to-do/activities/hiking" target="_blank" class="btn-hover2 color-10">Big Bear Trails</a>
+                    </p>
+
+                </section>
+
+                <!--
+                <section id="books" class="section-with-bg-color">
+                    <h2>Book Reviews and Thoughts</h2>
+                    <p>
+                        book reviews
+                    </p>
+                </section>-->
+
+                <section id="contact" class="section-with-bg-color">
+                    <h2>Contact Me</h2>
+                    <h4>
+                        I love meeting new people, and I reply to every email so say hello!
+                    </h4>
+
+                    <div class="contacts">
+                        <h3>Personal Email
+                            <p>anamelissa526@gmail.com</p>
+                         </h3>
+
+                        <h3>UCSC Email
+                            <p>amelissa@ucsc.edu</p>
+                        </h3>
+
+                        <h3>LinkedIn
+                            <p>www.linkedin.com/in/ana-melissa</p>
+                        </h3>                        
+                    </div>
+                </section>
+                
+                <section id="music" class="section-with-bg-color">
+                    <div class="container">
+                        <h2>Music Discovery</h2>
+                        <div class="spotifylogo">
+                            <img src="WebsitePhotos/spotifylogo.png" alt="SpotifyLogo" class="img-fluid">
+                        </div>
+                        <div id="SpotifyPlaylist" class="music-section">
+                            <h4>Spotify playlists linked below:</h4>
+                            <div class="music-items-container">
+                                <div class="music-item2">
+                                    <p>
+                                        <img src="WebsitePhotos/Screenshot 2023-08-13 122029.png" alt="playlistcover" class="img-fluid music-image2">
+                                        <strong>only the best songs everr</strong>
+                                        <p>
+                                            All my favorite songs
+                                        </p>
+                                        <p>
+                                            <a href="https://open.spotify.com/playlist/3ztwzaEB2X4qZuACH65bkO?si=8abdea6c697e4882" target="_blank" class="btn-hover2 color-10">click here to listen</a>
+                                        </p>
+                                    </p>
+                                </div>
+
+                                <div class="music-item2">
+                                    <p>
+                                        <img src="WebsitePhotos/Screenshot 2023-08-13 122335.png" alt="ppc" class="img-fluid music-image2">
+                                        <strong>dancin dweebie</strong>
+                                        <p>
+                                            When you feel like dancing, play this!
+                                        </p>
+                                        <p>
+                                            <a href="https://open.spotify.com/playlist/68ceLDsH3ecHsbQXxwFgIF?si=8eb1c83bad1343f6" target="_blank" class="btn-hover2 color-10">click here to dance</a>
+                                        </p>
+                                    </p>
+                                </div>
+
+                                <div class="music-item2">
+                                    <p>
+                                        <img src="WebsitePhotos/Screenshot 2023-08-13 122132.png" alt="pc" class="img-fluid music-image2">
+                                        <strong>desert darling</strong>
+                                        <p>
+                                            driving through the desert
+                                        </p>
+                                        <p>
+                                            <a href="https://open.spotify.com/playlist/6ZWf1Sq32NtLnc3rmvsqzl?si=008c88d878114b74" target="_blank" class="btn-hover2 color-10">click here to discover</a>
+                                        </p>
+                                    </p>
+                                </div>
+
+                                <div class="music-item2">
+                                    <p>
+                                        <img src="WebsitePhotos/Screenshot 2023-08-13 122423.png" alt="pcc" class="img-fluid music-image2">
+                                        <strong>roots</strong>
+                                        <p>
+                                            Songs from my childhood
+                                        </p> 
+                                        <p>
+                                            <a href="https://open.spotify.com/playlist/09O2eIX2DIrHZw9g7qlqY6?si=0f768e94766040d7" target="_blank" class="btn-hover2 color-10">click here to reminisce</a>
+                                        </p>
+                                    </p>
+                                </div>
+
+                                <div class="music-item2">
+                                    <p>
+                                        <img src="WebsitePhotos/Screenshot 2023-08-15 143518.png" alt="ppcc" class="img-fluid music-image2">
+                                        <strong>reserved</strong>
+                                        <p>
+                                            No words, just instrumental groove
+                                        </p>
+                                        <p>
+                                            <a href="https://open.spotify.com/playlist/2qsUI6BZ5tCAq0Vay3IPii?si=12667d467d834fac" target="_blank" class="btn-hover2 color-10">click here to groove</a>
+                                        </p>
+                                    </p>    
+                                </div>
+
+                                <div class="music-item2">
+                                    <p>
+                                        <img src="WebsitePhotos/Screenshot 2023-08-15 150125.png" alt="ppccc" class="img-fluid music-image2">
+                                        <strong>for a rainy day</strong>
+                                        <p>
+                                            featuring Robert Lester Folsom
+                                        </p>
+                                        <p>
+                                            <a href="https://open.spotify.com/playlist/6sxZHGDmoy6Utt2bPGP7eS?si=fbd475cde85e4436" target="_blank" class="btn-hover2 color-10">click here to relax</a>
+                                        </p>
+                                    </p>    
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="SongRecomendations" class="music-section">
+                            <h4>Song Recommendations Below</h4>
+                            <p>Listed below are 8 differnet songs I recommend listening to! </p>
+                            <div class="music-items-container">
+
+                                <div class="music-item"> 
+                                    <img src="WebsitePhotos/sundays.jpg" alt="Sundays" class="img-fluid music-image">
+                                    <p>
+                                        <a href="https://www.youtube.com/watch?v=wwHrEhOLIJ0&ab_channel=TheSundays-Topic" target="_blank" class="btn-hover2 color-10">The Sundays - Goodbye</a>
+                                    </p>
+                                </div>
+
+                                <div class="music-item">
+                                    <img src="WebsitePhotos/Screenshot 2023-08-15 194644.png" alt="Scuba" class="img-fluid music-image">
+                                    <p>
+                                        <a href="https://youtu.be/zQ2XXv9Didg" target="_blank" class="btn-hover2 color-10"> ScubaZ - The Vanishing American Family</a>
+                                    </p> 
+                                </div>
+
+                                <div class="music-item">
+                                    <img src="WebsitePhotos/jackjohnson.jpg" alt="ONandON" class="img-fluid music-image">
+                                    <p>
+                                        <a href="https://www.youtube.com/watch?v=7ENO87q3oY8&ab_channel=JackJohnson-Topic" target="_blank" class="btn-hover2 color-10">Jack Johnson - Cookie Jar</a>
+                                    </p>
+                                </div>
+
+                                <div class="music-item">
+                                    <img src="WebsitePhotos/x.jpg" alt="TrueLove" class="img-fluid music-image">
+                                    <p>
+                                        <a href="https://www.youtube.com/watch?v=v1fiMKM2KOI&ab_channel=X-Topic" target="_blank" class="btn-hover2 color-10">X - True Love Pt. #2</a>
+                                    </p>
+                                </div>
+
+                                <div class="music-item">
+                                    <img src="WebsitePhotos/LennyKravitz.jpg" alt="Spacehog Album" class="img-fluid music-image">
+                                    <p>
+                                        <a href="https://www.youtube.com/watch?v=TmENMZFUU_0&ab_channel=LennyKravitzVEVO" target="_blank" class="btn-hover2 color-10">Lenny Kravitz - It Ain't Over 'Til It's Over</a>
+                                    </p>
+                                </div>
+
+                                <div class="music-item">
+                                    <img src="WebsitePhotos/spacehog.jpg" alt="Spacehog Album" class="img-fluid music-image">
+                                    <p>
+                                        <a href="https://youtu.be/PCsGRCf8T9Y" target="_blank" class="btn-hover2 color-10">Spacehog - In the Meantime</a>
+                                    </p>
+                                </div>
+                                
+                                <div class="music-item">
+                                    <img src="WebsitePhotos/harryNilsson.jpg" alt="HarryNilsson" class="img-fluid music-image">
+                                    <!-- <button class="btn-hover color-10">BUTTON</button> -->
+                                    <p>
+                                        <a href="https://www.youtube.com/watch?v=5zHVFXorF38&ab_channel=jmms429" target="_blank" class="btn-hover2 color-10"> Harry Nilsson - Everybody's Talkin'</a>
+                                    </p>
+                                    
+                                </div>
+
+                                <div class="music-item">
+                                    <img src="WebsitePhotos/Screenshot 2023-08-15 194506.png" alt="Rush" class="img-fluid music-image">
+                                    <!-- <button class="btn-hover color-10">BUTTON</button> -->
+                                    <p>
+                                        <a href="https://youtu.be/_LXKZq0fYDw" target="_blank" class="btn-hover2 color-10"> Rush - Red Barchetta</a>
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    
+                </section>
+                <section id="END" class="section-with-bg-color">
+                    <h2>You have reached the end of my website!</h2>
+                    <p>
+                        Refer to the NavBar to explore.
+                    </p>
+                </section>
+            </div>
+        </main>
+    </div>
+
+
+    <!--
+    <footer>
+        <p>&copy; 2023 Ana Melissa. All rights reserved.</p>
+    </footer>
+-->
+
+     <!-- scrolling tool for easier view of portfolio -->
+    <script src="app.js">
+        document.addEventListener('DOMContentLoaded', function() {
+            const scrollLinks = document.querySelectorAll('.scroll-link');
+            scrollLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(link.getAttribute('href'));
+                    target.scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+        });
+    </script>
+
+    <!-- this script is for the navbar toggle to go away after selection -->
+<script>
+    // Get all navbar links
+    const navLinks = document.querySelectorAll('.nav-link-scroll');
+
+    // Get the navbar collapse element
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+
+    // Add click event listeners to each link
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            // Check if the navigation menu is currently expanded
+            if (navbarCollapse.classList.contains('show')) {
+                // If it's expanded, toggle it to collapse
+                navbarCollapse.classList.remove('show');
+            }
+        });
+    });
+</script>
+
+    
+</body>
+</html>
+
+
