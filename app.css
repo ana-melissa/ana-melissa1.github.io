@@ -259,7 +259,7 @@ body {
 */
 
 #about {
-  background-color: #191825;;
+  background-color: #191825;
   box-shadow: 0 2px 4px rgba(0, 0.0, 0.0, 0.9);
 }
 
@@ -299,7 +299,7 @@ body {
    PORTFOLIO
 */
 #portfolio {
-  background-color: #191825;;
+  background-color: #191825;
   box-shadow: 0 2px 4px rgba(0, 0.0, 0.0, 0.9);
 }
 
@@ -349,7 +349,7 @@ iframe {
    ADVENTURES
 */
 #adventures {
-  background-color: #191825;;
+  background-color: #191825;
   box-shadow: 0 2px 4px rgba(0, 0.0, 0.0, 0.9);
 }
 #adventures p {
@@ -403,14 +403,14 @@ iframe {
    BOOKS
    BOOKS
 */
-/*
-#books {
-  background-color: #F7FFE5;
+
+#Reading {
+  background-color: #191825;
   box-shadow: 0 2px 4px rgba(0, 0.0, 0.0, 0.9);
 }
-#books p {
+#Reading p {
   padding: 20px;
-}*/
+}
 
 
 
@@ -421,7 +421,7 @@ iframe {
 */
 
 #contact {
-  background-color: #191825;;
+  background-color: #191825;
   box-shadow: 0 2px 4px rgba(0, 0.0, 0.0, 0.9);
 }
 
