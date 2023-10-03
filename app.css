@@ -311,6 +311,13 @@ body {
   justify-content: space-between;
 }
 
+.section-with-bg-color h4 {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 iframe {
   border: none;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
