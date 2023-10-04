@@ -17,15 +17,24 @@ BLUE
 #D2E9E9 rgb(210, 233, 233) (med dark blue)
 #E3F4F4 rgb(227, 244, 244) (med light blue)
 #F8F6F4 rgb(248, 246, 244) (lightest blue)
-
 */
 /* styles.css */
 body {
   color: #ffffff; /* Replace with your desired light color */
 }
 
-/* button style for link */
+/* note taking format */
+span{
+  display:block;
+  text-indent:12px;
+  }
+span samp {
+  display:block;
+  text-indent:24px;
+  font-family:initial;
+}
 
+/* button style for link */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
