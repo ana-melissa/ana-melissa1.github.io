@@ -423,10 +423,24 @@ iframe {
 #Reading {
   background-color: #191825;
   box-shadow: 0 2px 4px rgba(0, 0.0, 0.0, 0.9);
+  display: flex;
+  flex-direction: column;
 }
 #Reading p {
-  padding: 20px;
+  padding: 10px; /* Add 20 pixels of padding on all sides */
+  margin-left:20px;
 }
+
+.Reading h2 {
+  padding: 10px;
+  margin-left:20px;
+}
+
+.Reading h3 {
+  padding: 10px;
+  margin-left:20px;
+}
+
 
 
 
