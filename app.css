@@ -310,6 +310,8 @@ body {
 #portfolio {
   background-color: #191825;
   box-shadow: 0 2px 4px rgba(0, 0.0, 0.0, 0.9);
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
   /* padding to "portfolio" heading h2 */
@@ -325,11 +327,48 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-right: 40px;
 }
+
+.section-with-bg-color h5 {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 40px;
+}
+
+.section-with-bg-color h6 {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.horizontal-container {
+  display: flex; /* or inline-block */
+  align-items: center; /* Vertical alignment */
+  margin-left: 40px;
+}
+
 
 iframe {
   border: none;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  width: 100%; /* Make the iframe take the full width of its container */
+  max-width: 700px; /* Add a max-width to control the maximum width */
+  height: 100%; /* Maintain aspect ratio */
+  max-height: 700px;
+  margin-left: 40px;
+  margin-bottom: 30px;
+}
+
+/* Add responsive styles for smaller screens if not already present in your CSS */
+@media screen and (max-width: 768px) {
+  iframe {
+      margin-left: 10px; /* Adjust the margin for smaller screens */
+  }
 }
 
 /* add 3 separate row sections for about */
@@ -358,6 +397,7 @@ iframe {
 .portfolio-section p {
   padding: 20px; /* Add 20 pixels of padding on all sides */
 }
+
 
 /* 
    ADVENTURES 
@@ -411,8 +451,6 @@ iframe {
   height: auto; /* Automatically adjust the height to maintain aspect ratio */
   margin-bottom: 20px;
 }
-
-
 
 /* 
    BOOKS 
