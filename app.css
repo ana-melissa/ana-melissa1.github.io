@@ -198,8 +198,10 @@ box-shadow: 0 4px 15px 0 rgba(4, 2, 6, 0.75);
 
 .navbar-nav .nav-link {
   /*padding: 10px 15px;*/
-  border: none;
-  margin-left: 6px;
+  border: 1px solid #73d3eb;
+  border-radius: 12px;
+  margin-left: 10px;
+  color: #2d6464
 }
 
 /* Add this CSS to your stylesheet */
