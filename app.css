@@ -201,7 +201,8 @@ box-shadow: 0 4px 15px 0 rgba(4, 2, 6, 0.75);
   border: 1px solid #73d3eb;
   border-radius: 12px;
   margin-left: 10px;
-  color: #2d6464
+  /*color: #2d6464;*/
+  background-color: #191825;
 }
 
 /* Add this CSS to your stylesheet */
