@@ -118,8 +118,8 @@ box-shadow: 0 4px 15px 0 rgba(4, 2, 6, 0.75);
 }
 
 .btn-hover2.color-10 {
-      background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B);
-  box-shadow: 0 4px 15px 0 rgba(20, 15, 16, 0.75);
+  background-image: linear-gradient(to right, #3f4e97, #3498db, #5f8cc0, #f1e675); /* Adjust the color for the hover effect */
+  box-shadow: 0 4px 15px 0 rgba(20, 15, 16, 0.9); /* Adjust the shadow for the hover effect */
 }
 
 /* position header photo to the right of header text */
@@ -129,35 +129,40 @@ box-shadow: 0 4px 15px 0 rgba(4, 2, 6, 0.75);
   justify-content: space-between;
 }
 
+
 /* Customize the font of my name in the header*/
 .text-container h1 {
   /*font-family: "Whomp", Regular;*/
-  font-size: 30px; 
-  color: #191825;
+  font-size: 32px; 
+  color: #fff;
   margin-left: 30px;
-  text-shadow: 6px 4px 4px #64dfdf;
+  margin-right: 40px;
+  /*background-color: rgba(244, 222, 127, 0.9);*/
+  background-color: rgba(34, 55, 74, 0.7);
+  box-sizing: border-box; 
+  border-radius: 10px;
+  padding: 10px;
 }
 
-/* Customize the font of my name in the header */
 .text-container h3 {
-  font-size: 11px; 
-  text-shadow: 6px 4px 4px #64dfdf;
-  color: #191825;
-  margin-left: 30px; /* more visually appealing */
+  font-size: 12px; 
+  color: #fff;
+  margin-left: 30px;
   margin-top: 20px;
+  padding: 10px;
+  background-color: rgba(34, 55, 74, 0.7);
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
 /* customize background color of header */
 .header-with-bg-image {
   background-size: cover;
-  background-position: top;
+  background-position: center, center;
   background-repeat: no-repeat;
-  min-height: 280px;
+  min-height: 90px;
   width: auto;
   height: auto;
-
-  /* background-color: #e9edc9; */
-  /* padding: 30px; */
   box-shadow: 0 4px 8px rgba(0, 0.0, 0, 0.9); /* Add a subtle shadow */
 }
 
@@ -165,7 +170,7 @@ box-shadow: 0 4px 15px 0 rgba(4, 2, 6, 0.75);
 .header-picture img {
   width: auto; /* Make the image fill the entire width of the header */
   height: auto; /* Maintain the image's aspect ratio to avoid distortion */
-  max-height: 200px; /* Set the maximum height of the image */
+  max-height: 250px; /* Set the maximum height of the image */
 }
 
 /* Custom styles for the navbar */
@@ -185,17 +190,20 @@ box-shadow: 0 4px 15px 0 rgba(4, 2, 6, 0.75);
   border-radius: 12px;
   margin-left: 10px;
   background-color: #191825;
+  padding: 10px;
 }
 
 /* Add this CSS to your stylesheet */
 .navbar-nav .nav-item .nav-link {
   transition: color 0.3s; /* Adding a smooth color transition */
   color: #d9b4e7; /* Default color */
+  padding: 10px;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
   color: #64dfdf; /* Color to apply when hovering */
   text-decoration: underline;
+  padding: 10px;
 }
 
 .navbar-toggler {
