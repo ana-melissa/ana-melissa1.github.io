@@ -142,6 +142,7 @@ box-shadow: 0 4px 15px 0 rgba(4, 2, 6, 0.75);
   box-sizing: border-box; 
   border-radius: 10px;
   padding: 10px;
+  min-width: 300px;
 }
 
 .text-container h3 {
@@ -155,6 +156,7 @@ box-shadow: 0 4px 15px 0 rgba(4, 2, 6, 0.75);
   /*background-color: rgba(34, 55, 74, 0.7);*/
   box-sizing: border-box;
   border-radius: 10px;
+  min-width: 300px;
 }
 
 /* customize background color of header */
@@ -290,11 +292,14 @@ body {
 .about-section {
   display: flex;
   flex-direction: column;
+  padding: 10px;
+  justify-content: space-between;
 }
 
-.about-section h4 {
+.about-section h2 {
   padding: 10px;
-  margin-left:20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 /* add space between the 3 paragraphs */
@@ -559,6 +564,10 @@ body {
   text-align: center; /* Center the text */
 }
 
+.items p {
+  text-align: center;
+}
+
 .music-image2 {
   max-width: 100px;
   height: 100;
@@ -585,21 +594,23 @@ body {
   margin-right: 10px;
   background-color: #191825;
 }
+/*
 @media (max-width: 768px) {
   .items {
       flex-basis: 100%;
   }
-}
+}*/
 
 .items {
   flex: calc(50% - 20px); /* two items per row */
   display: flex;
-  flex-direction: column; /* Display items in a row */
-  justify-content: space-between; /* Center content vertically */
+  flex-direction: row; /* Display items in a row */
+  justify-content: center; /* Center content vertically */
   align-items: center; /* Center content horizontally */
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 15px;
+  min-width: 300px;
 }
 
 .music-item p {
@@ -629,12 +640,16 @@ body {
   .music-item {
       flex-direction: column; /* Stack items vertically on smaller screens */
   }
-
   .music-image {
       margin-bottom: 10px; /* Add spacing between image and text */
   }
 }
 
+@media (max-width: 668px) {
+  .items {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+}
 
 /* 
    END OF WEBSITE
