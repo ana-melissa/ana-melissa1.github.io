@@ -194,33 +194,38 @@ box-shadow: 0 4px 15px 0 rgba(4, 2, 6, 0.75);
   border-radius: 12px;
   margin-left: 10px;
   background-color: rgba(34, 55, 74, 0.7);
-  padding: 10px;
+  padding: 5px;
 }
 
 /* Add this CSS to your stylesheet */
 .navbar-nav .nav-item .nav-link {
   transition: color 0.3s; /* Adding a smooth color transition */
-  color: #d9b4e7; /* Default color */
+  color: #ffffff; /* Default color */
   padding: 10px;
+  margin-top: 5px;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
   color: #64dfdf; /* Color to apply when hovering */
   text-decoration: underline;
   padding: 10px;
+  margin-top: 5px;
 }
 
 .navbar-toggler {
   border: none;
   transition: background-color 0.3s, border-color 0.3s;
   border-radius: 5px;
-  box-shadow: 0px 0px 5px rgba(128, 208, 237, 0.2);
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.2);
   background-color: rgba(34, 55, 74, 0.7);
   margin-left: 20px;
+  padding: 10px;
+  margin-bottom: 5px;
 }
 
 .navbar-toggler:hover {
-  background-color: #d8b5e5;
+  background-color: #c9c9c9;
+  margin-bottom: 5px;
 }
 
 body {
@@ -286,6 +291,15 @@ body {
   flex-direction: row;
   justify-content: space-between;
   padding: 20px;
+}
+
+.link-to-section {
+  text-decoration: underline;
+  color: #a8cff0; /* Change the color to your preference */
+}
+
+.link-to-section:hover {
+  color: rgb(179, 244, 192); /* Change the color on hover to your preference */
 }
 
 /* inside each section details (column format) */
@@ -611,6 +625,10 @@ body {
   margin-right: 10px;
   margin-bottom: 15px;
   min-width: 300px;
+}
+
+.items p {
+  text-align: left;
 }
 
 .music-item p {
